@@ -26,11 +26,8 @@ header h1 {
 
 main .container {
   width: 100vw;
-  height: 90%;
-  align-items: center;
-  justify-content: center;
+  height: 90vh;
   display: flex;
-  padding: 10px;
 }
 main .container .center {
   margin-left: auto;
@@ -39,42 +36,45 @@ main .container .center {
   justify-content: center;
   display: flex;
 }
-main .container button {
+main .container .center button {
   background: transparent;
   width: 40px;
   border: none;
+  overflow: hidden;
 }
-main .container button button:active {
+main .container .center button img {
+  width: 100%;
+  height: 100%;
+}
+main .container .center button:active {
   transform: translateY(4px);
   box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
 }
-main .container .columm {
+main .container .center .columm {
   width: 65vw;
   align-items: center;
   justify-content: center;
   display: block;
 }
-main .container .columm .view-anime {
-  width: 60%;
-  height: 60%;
+main .container .center .columm .view-anime {
+  width: 80%;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
   overflow: hidden;
   border: solid 3px white;
 }
-main .container .columm .view-anime img {
+main .container .center .columm .view-anime img {
   width: 100%;
   height: 100%;
 }
-main .container .columm .nav {
+main .container .center .columm .nav {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
 }
-main .container .columm .nav button {
+main .container .center .columm .nav button {
   font-size: 4rem;
   border-radius: 20px;
   padding: 10px;
@@ -83,8 +83,24 @@ main .container .columm .nav button {
   border: none;
   width: auto;
 }
-main .container .columm .nav button:hover {
+main .container .center .columm .nav button:hover {
   background-color: #e9541e;
+}
+
+@media (min-width: 500px) {
+  main .container .center button {
+    width: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  main .container .center button {
+    width: 100px;
+  }
+  main .container .center .columm .view-anime {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
