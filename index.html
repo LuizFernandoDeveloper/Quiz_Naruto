@@ -8,24 +8,25 @@
     <title>Quiz Naruto</title>
 </head>
 <body>
-    <header>
+    <header id="name-person">
             <h1>Quiz Naruto</h1>
     </header>
     <main>
         <div class="container">
             <div class="center">
-                <button><img src="./imagens/icon-left.svg" alt="botão"></button>
+                <button onclick="left()"><img src="./imagens/icon-left.svg" alt="botão"></button>
                 <div class="columm" >
                     <div class="view-anime" id="views">
                         <img src="./imagens/naruto.png" alt="imagem de anime">
                     </div>
                     <div class="nav">
-                        <button onclick="">Start</button>
+                        <button onclick="start()">Start</button>
                     </div>
                 </div>
-                <button><img src="./imagens/icon-right.svg" alt="botão"></button>
+                <button onclick="right()"><img src="./imagens/icon-right.svg" alt="botão"></button>
             </div>
         </div>
     </main>
+    <script src="./javascript/main.js"></script>
 </body>
 </html>

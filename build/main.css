@@ -7,6 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #0D4477;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -22,12 +23,12 @@ header h1 {
   color: white;
   margin-block-start: 0;
   margin-block-end: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 main .container {
   width: 100vw;
   height: 90vh;
-  display: flex;
 }
 main .container .center {
   margin-left: auto;
@@ -48,7 +49,7 @@ main .container .center button img {
 }
 main .container .center button:active {
   transform: translateY(4px);
-  box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
+  filter: drop-shadow(10px 10px 20px #4444dd);
 }
 main .container .center .columm {
   width: 65vw;

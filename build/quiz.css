@@ -1,0 +1,83 @@
+main .container .arae-de-perguntas {
+  background-color: #5E94AC;
+  width: 70%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+main .container .arae-de-perguntas .barra-de-carregamento-shape {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+}
+main .container .arae-de-perguntas .barra-de-carregamento-shape #barra {
+  background-color: #F18E6A;
+  width: 50%;
+  height: 100%;
+}
+main .container .arae-de-perguntas h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+main .container .arae-de-perguntas #perguntas {
+  width: 70%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+main .container .arae-de-perguntas .container-botoes {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .container .arae-de-perguntas .container-botoes button {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  border: none;
+}
+main .container .arae-de-perguntas .container-botoes button:hover {
+  background-color: #F18E6A;
+  color: white;
+}
+main .container .arae-de-perguntas .container-botoes button:active {
+  transform: translateY(4px);
+  box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
+}
+
+@media (max-width: 600px) {
+  main .container .arae-de-perguntas {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  main .container .arae-de-perguntas #perguntas {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    overflow: hidden;
+  }
+  main .container .arae-de-perguntas .container-botoes {
+    margin-top: 60px;
+  }
+  main .container .arae-de-perguntas .container-botoes button {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=quiz.css.map */

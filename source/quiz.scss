@@ -1,0 +1,96 @@
+$corSectionPerguntas: #5E94AC;
+$corDaBarraDeCarregamento:#F18E6A;
+$corDeFundoDaBarraDeCarregamento:white;
+$corPricipalDeTexto : white;
+$corBotao:white;
+main{
+    .container{
+        .arae-de-perguntas{
+            background-color: $corSectionPerguntas;
+            width:70%;
+            height: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
+            .barra-de-carregamento-shape{
+                background-color:$corDeFundoDaBarraDeCarregamento;
+                width: 100%;
+                height: 10%;
+                #barra{
+                    background-color:$corDaBarraDeCarregamento;
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+            h1{
+                color: $corPricipalDeTexto;
+                font-family: 'Roboto', sans-serif;
+            }
+            #perguntas{
+                width: 70%;
+                height: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: 2rem;
+                font-family: 'Roboto', sans-serif;
+                color: $corPricipalDeTexto;
+            }
+            .container-botoes{
+                display: block;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                button{
+                    background-color: $corBotao;
+                    padding: 10px;
+                    width: 100%;
+                    margin-top: 10px;
+                    font-size: 1rem;
+                    font-family: 'Roboto', sans-serif;
+                    text-align:left;
+                    border: none;
+                    &:hover{
+                        background-color: #F18E6A;
+                        color: white;
+                    }
+                    &:active{
+                        transform: translateY(4px);
+                        box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:600px){
+    main{
+        .container{
+            .arae-de-perguntas{
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+                border-radius: 0;
+                #perguntas{
+                    width: 90%;
+                    height: 100px;
+                    margin-bottom: 15px;
+                    font-size: 1.7rem;
+                    overflow: hidden;
+                    
+                }
+                .container-botoes{
+                    margin-top: 60px;
+                    button{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
