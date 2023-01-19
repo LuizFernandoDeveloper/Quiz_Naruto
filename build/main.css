@@ -1,0 +1,90 @@
+html {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #0D4477;
+}
+
+header {
+  background-color: #5E94AC;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+header h1 {
+  color: white;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+main .container {
+  width: 100vw;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+main .container .center {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+main .container button {
+  background: transparent;
+  width: 40px;
+  border: none;
+}
+main .container button button:active {
+  transform: translateY(4px);
+  box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
+}
+main .container .columm {
+  width: 65vw;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+main .container .columm .view-anime {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  overflow: hidden;
+  border: solid 3px white;
+}
+main .container .columm .view-anime img {
+  width: 100%;
+  height: 100%;
+}
+main .container .columm .nav {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+main .container .columm .nav button {
+  font-size: 4rem;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #F18E6A;
+  color: white;
+  border: none;
+  width: auto;
+}
+main .container .columm .nav button:hover {
+  background-color: #e9541e;
+}
+
+/*# sourceMappingURL=main.css.map */

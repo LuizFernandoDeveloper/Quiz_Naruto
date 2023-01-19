@@ -1,0 +1,97 @@
+$corPricipalDeTexto : white;
+$corSecundariaAzulClaro: #5E94AC;
+$corDeFundo:#0D4477;
+$carbackgroundButton: #F18E6A;
+$colorHoverModeTheme:  #e9541e;
+
+html{
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: $corDeFundo;
+}
+header{
+
+    background-color: $corSecundariaAzulClaro;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    h1{
+        color: $corPricipalDeTexto;
+        margin-block-start:0;
+        margin-block-end: 0;
+    }
+}
+
+main{
+    .container{
+        width: 100vw;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        button{
+            background: transparent;
+            width: 40px;
+            border: none;
+            button:active{
+                transform: translateY(4px);
+                box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
+            }
+        }
+        .columm{
+            width: 65vw;
+            align-items: center;
+            justify-content: center;
+            display: block;
+            .view-anime{
+                width: 60%;
+                height: 60%;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 130px;
+                overflow: hidden;
+                border: solid 3px $corPricipalDeTexto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .nav{
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                button{
+                    font-size: 4rem;
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: $carbackgroundButton;
+                    color: $corPricipalDeTexto;
+                    border: none;
+                    width: auto;
+                    &:hover{
+                        background-color: $colorHoverModeTheme;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
