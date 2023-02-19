@@ -65,6 +65,7 @@ let kuramaPeruntasRespostas = [
     }
     
 ]
+
 let narutoPeruntasRespostas = [
     {
         "pergunta":"Qual é a cor do cabelo de naruto?",
@@ -120,7 +121,6 @@ let narutoPeruntasRespostas = [
 
 atualizaGames()
 
-
 function respostaUm(value){
     if(respostaCertaDaRodada == value){
         score ++;
@@ -158,7 +158,10 @@ function atualizaGames(){
     }
     scor.innerText = `${score}/8`;
     loading.setAttribute("value", load);
-    randomOption =  Math.floor(Math.random() * 3);
+    randomOption ++;
+    if(randomOption > 2){
+        randomOption = 0;
+    }
     switch (parametroPersonagem){
         case 0:
             naruto();
@@ -170,7 +173,6 @@ function atualizaGames(){
     position++;
 }
 
-
 function pageFinaL(){
     areaQuiz.innerHTML = `  <div class="final-page">
                                 <h1 id="scor"><span>Score:</span> ${score}/8</h1>
@@ -181,9 +183,6 @@ function pageFinaL(){
 function pageHome(){
     window.location.href = "./index.html";
 }
-
-
-
 
 function naruto(){
 
@@ -209,7 +208,6 @@ function naruto(){
                             <button id="resposta-tres" value="${narutoPeruntasRespostas[position]["Resposta-certa"]}" onclick="respostaTres(this.value)">${narutoPeruntasRespostas[position]["Resposta-certa"]}</button>`
     }
 }
-
 
 function kurama(){
 
