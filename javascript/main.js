@@ -8,11 +8,15 @@ let arrayPersonagens = ["./imagens/naruto.png", "./imagens/kurama.webp",
                         "./imagens/shikamaru.jpg", "./imagens/tobirama.jpg"];
 
 let arrayNomesDePersonagens = ["Naruto", "Kurama", "Gyuki", "Hashirama", "Kakashi", 
-                            "Madara", "sakura", "Sasuke", "Shikamaru", "Tobirama"]
+                            "Madara", "sakura", "Sasuke", "Shikamaru", "Tobirama"];
 
 function start(){
-    window.location.href = "./perguntas.html"
+    
+    window.location.href = "./perguntas.html?" + cicloPersonagem;
 }
+
+    
+
 
 function left(){
 
@@ -43,3 +47,6 @@ function atualizaPersonagem(){
     VIEWS.innerHTML = `<img src="${arrayPersonagens[cicloPersonagem]}" alt="imagem de anime">`;
     NAME_PERSON.innerHTML = `<h1>Quiz ${arrayNomesDePersonagens[cicloPersonagem]}</h1>`;
 }
+
+
+
